@@ -1,0 +1,285 @@
+
+body {
+  background-color:rgba(225, 217, 192, 1);
+  margin: 0% 10% 0% 10%;
+  align-self: center;
+  align-items: center;
+  max-height: fit-content;
+}
+
+hr {
+color: rgba(22, 22, 22, 0.621);
+border: 0;
+background-color: rgba(22, 22, 22, 0.621);
+height: 2px;
+}
+
+::selection {
+  color: rgba(225, 217, 192, 1);
+  background:rgb(4, 1, 47)
+}
+::-moz-selection {
+  color: rgba(225, 217, 192, 1);
+  background:rgb(4, 1, 47)
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono','IBM Plex Sans', 'IBM Plex Serif';
+  src: url(src/fonts);
+}
+
+
+* {
+  font-family: 'IBM Plex Mono', 'IBM Plex Sans';
+  color: rgb(8, 8, 8);
+}
+
+h1{
+  font-weight:400 ;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0px 0px 12px 0px;
+  border-bottom: 2px solid rgba(22, 22, 22, 0.8);
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h5{
+  font-size:1rem ;
+  font-weight:500 ;
+}
+
+p{
+  font-weight:400;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+a {
+  color: black;
+}
+
+li{
+  margin: 8px 0px 8px 0px;
+  width: 100%;
+  line-height: 1.8rem;
+}
+
+#viewport {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+
+#sidebar {
+display: flex;
+width: 30%;
+max-height: 700px;
+min-height: 300px;
+flex-direction: column;
+justify-content: space-between;
+position: sticky;
+top: 1rem;
+padding-top: 3%;
+
+}
+
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+ 
+}
+
+#main-content {
+ display: flex;
+ flex-direction: column;
+ margin-top: 8%;
+ padding: 8% 0% 0% 0%;
+ width: 65%;
+}
+
+#page-title {
+  padding-left: 2%;
+}
+
+#PLP {
+display: grid;
+height: 30.6rem;
+row-gap: 5rem;
+column-gap: 96px;
+align-self: stretch;
+grid-template-rows: repeat(2, minmax(0, 1fr));
+grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.item {
+    display: flex;
+width: 80%;
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
+}
+
+.item-image {
+    display: flex;
+width: 8rem;
+height: 8rem;
+justify-content: left;
+align-items: center;
+flex-shrink: 0;
+aspect-ratio: 1/1;
+
+}
+
+.bg{
+  position: absolute;
+  margin: 1% 4% 0 0;
+  
+
+}
+
+.object {
+  position:absolute;
+  
+}
+
+
+.item-name {
+  margin-left:0;
+  width: 100%;
+  max-width: 140px;
+}
+
+.page-title-desc {
+  padding-left: 2%;
+}
+
+.case-title {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.case-image img{
+display: flex;
+flex-direction: row;
+max-width: 60px;
+object-fit: contain;
+}
+
+.case-study {
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+align-self: center;
+width: 100%;
+}
+.case-study p {
+  font-family: 'IBM Plex Sans';
+}
+
+.img-container {
+  width: fit-content;
+  max-width: 98%;
+  max-height: 25rem;
+  overflow: scroll;
+  border: 0.2rem;
+  border-style: solid;
+  border-color: #072862;
+  border-width: 0.2rem;
+  border-radius: 0.5rem;
+  scroll-behavior: smooth;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  justify-self: center;
+}
+
+.in-txt-img {
+  width: fit-content;
+  height: fit-content;
+  max-width: 98%;
+  overflow: auto;
+  object-fit: contain;
+  border: 0.2rem;
+  border-style: solid;
+  border-color: #072862;
+  border-width: 0.2rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  justify-self: center;
+}
+
+.bg, .object {
+  transform: rotate(0deg) scale(1); /* establish a baseline */
+  transition: transform 300ms ease-in; /* default (for leave) */
+  display: inline-block; /* ensure transform works reliably */
+}
+
+/* When item is hovered */
+.item.hovered .bg,
+.item.hovered .object {
+  transition: transform 200ms ease-out; /* smoother entry */
+}
+
+/* Transform targets */
+.item.hovered .bg {
+  transform: rotate(-10deg) scale(1.2);
+}
+
+.item.hovered .object {
+  transform: rotate(15deg) scale(1.2);
+}
+
+.backButton {
+  margin: 0;
+  border: none;
+  background-color: rgba(225, 217, 192, 1);;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+footer {
+  padding-top: 6%;
+  padding-bottom: 2%;
+  position: sticky;
+  justify-self: center;
+  align-self: baseline;
+  font-size: 0.8rem;
+
+}
+
+
+/*
+.test-case-title {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:center;
+  width: 100%;
+  gap: 4%;
+}
+
+.test-case-image img {
+display: flex;
+flex-direction: row;
+max-width: 60px;
+object-fit: contain;
+}
+*/

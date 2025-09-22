@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(rgba(225, 217, 192, 1));">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <title>UX Writing Case Study'</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio Website">
+  <meta name="keywords" content="Product Design, UX Writing, Copywriting">
+  <meta name="author" content="Hanif Mirhosseini">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="viewport">
+  <div id="sidebar">
+    <div class="top-sidebar">
+      <div>
+      <button type="button" class="backButton"><img src="src/images/Line 1.svg" alt="back button" onclick="history.back()"></a></button>
+      <h5><i>Hanif's</i></h5>
+      </div>
+     <div class="page-title-desc">
+      <h3>Case Study</h3>
+      <div class="case-title">
+                 <div class="case-image">
+                  <img style="position: absolute;" src="src/images/posBG.svg">
+                  <img src="src/images/pos.svg" alt="gavel"
+                     style="filter: drop-shadow(rgba(37, 32, 18, 0.5) -12px 13px 6px);">
+                 </div>
+                 <p style="font-size: 1.2rem; font-weight: 500;">Naming BNPL Services</p>
+            </div>
+      <p style="padding-top: 2%;">How we dealt with introducing consumer credit for the first time in Iran, despite legal issues.</p>
+      <p><b>Company:</b> <a href="https://snapppay.ir/">SnappPay</a></p>
+      <p><b>Role:</b> UX Writer</p>
+      <p><b>Time Frame:</b> Winter 2023</p>
+      <p><b>Collaborators:</b><a href="https://www.linkedin.com/in/ali-amindezfouli/">Ali Dezfouli (PD)</a>
+      <br><a href="https://www.linkedin.com/in/alirezabahrani/">Alireza Bahrani (Design System)</a>
+      <br><a href="https://www.linkedin.com/in/sanaz-gholampour-96241ab9/">Sanaz Gholampour (PM)</a></p>
+     </div>
+    </div>
+      <div> 
+      <ul id="menu">
+       <a href="index.html"> <li>Case Studies</li> </a>
+       <a href="contact.html"> <li>Contact Info</li> </a>
+       <a href="Resume.html"><li>Resumé</li></a>
+       
+      </ul>
+      </div>
+  </div>
+
+  <div id="main-content">
+    <div id="case-study" style="overflow: auto;">
+      <h2>Some context</h2>
+      <p>This one is about doing no one had done before. <br>SnappPay, under Snapp Group, is the first and most successful provider of BNPL services in Iran. As usury is <i> nominally </i>illegal here, there were no consumer credit providers before SnappPay. <br>This was so fun, because we had the opportunity to set the benchmark for consumer credit mental models in Iran. It was also a big challenge because of its novelty and the legal compliance issues.</p>
+      <h2>1.The challenge</h2>
+     <p> We were recieving a huge uptick in approved users, and needed a better, clearer way of communicating the concept of our credit types, so we were tasked with the redesign of the credit renewal modal and credit limit increase modal in the SnappPay app.</p>
+     <br><div class="in-txt-img">
+  <img src="src/images/RenewModal.png" alt="diagrams">
+</div>
+<p>There were three major hurdles:</p>
+<ul>
+  <li><b>Legal restrictions:</b><br>
+    Usury is nominally illegal in Iran. This meant I had to carefully craft text that was legally compliant—no references to “loans,” “interest,” or anything that might look like banking language.</li>
+  <li><b>Lack of mental models for credit services:</b><br>Because consumer credit is uncommon in Iran, our users had no established mental model for how BNPL works. We had to introduce the concept in a way that felt natural and intuitive.</li>
+  <li><b>Two distinct services:</b><br> <ol><li>Pay in 1 installment (end-of-month payment, ~25% of ceiling).</li>
+  <li>Pay in 4 installments (up to 100% of credit ceiling).</li></ol>
+Each needed to be clearly differentiated at a glance, while also showing vendor options and credit limits.</li>
+</ul><br>
+<h2>2.Designing</h2>
+<div class="in-txt-img">
+  <img src="src/images/modalbreakdown.png" alt="diagrams">
+</div>
+ <p>Here's how we handled everything in design:</p>
+ <ul>
+<li><b>Legal & cultural adaptation</b>
+  <ol><li>Avoided banking terminology to stay compliant.</li>
+    <li>Borrowed some terminology from familiar mental models of informal borrowing.</li>
+    <li>Positioned SnappPay as a payment method provider, not a lender.</li></ol>
+    <li><b>Semantic categories for services:</b>
+      <ol><li>Established two distinct color codes for “Pay-in-4” and “Pay-in-1”.</li>
+      <li>Worked with our design system specialist to enforce the colors across the app.</li>
+      </ol>
+    <li><b>Information architecture improvements:</b>
+      <ol><li>Created clear credit breakdowns so users instantly saw how much was available for each payment method.</li>
+      <li>Added vendor logos inside each color-coded box to show where the credit could be used.</li>
+      </ol>
+  </ul>
+  <p>We designed a number of iterations that fulfilled these criteria and went ahead to the testing phase.</p>
+  
+  <h2>3.Testing & results</h2>
+  
+ <p>We went out to some cafés that were known to be hotspots for our user personas, and carried out 10-second-ish recall tests on the whole design.</p>
+  <p>There was a difference of opinion here in the team. Some wanted only to test the text, devoid the context of the design. I pushed for testing with the text in the design, because I think the copy without the context of design can't be tested.</p>
+
+ <p>We ran these recall tests with 50+ participants, iterating every 10-ish users with slightly different versions.
+ One design-text combo clearly outperformed the others in terms of recall and comprehension. That version was chosen for development and shipped to users.</p>
+<div class="in-txt-img">
+  <img src="src/images/ResearchNight.png" alt="diagrams">
+</div>
+<p style="justify-self: center;"><i>Pictured: having fun with friends while user testing</i></p>
+  </div>
+    
+  </div>
+
+
+  </div>
+
+
+
+<footer>©<i> Everything was designed, written, coded, and illustrated by yours truly. ^_^ </i></footer>
+</body>
+ 
+
+</html>
